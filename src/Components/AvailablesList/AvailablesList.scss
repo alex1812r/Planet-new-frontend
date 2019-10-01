@@ -1,0 +1,82 @@
+.availables-list{
+  padding: 1rem 0 2rem 0; 
+  
+  .availables-list-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+
+    > h4{
+      width: 0;
+      flex-grow: 1;
+      font-size: 18px;
+    }
+    > div{
+      span{
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  table{
+    width: 100%;
+    thead{
+      
+      th{
+        border-bottom: 1px solid #ccc5;
+        padding: .5rem 1rem;
+        color:#757575;
+
+        &:first-child{
+          text-align: start;
+          & + th{
+            text-align: end;
+          }
+        }
+
+        > span{
+          margin-left: 1.5rem;
+        }
+      }
+
+    }
+
+    tbody{
+
+      td{
+        padding: .5rem 1rem;
+        
+        border-bottom: 1px solid #ccc5;
+        
+        &:first-child{
+          text-align: start;
+          //width: 55%;
+          & + td{
+            text-align: end;
+            color:#757575;
+          }
+        }
+        
+        > button.btn-to-chat{
+          margin-left: 1.5rem;
+          display: inline-block;
+          cursor: pointer;
+          background: none;
+          border:none;
+          font-size: 1rem;
+        }
+
+        > span.active{ color: limegreen; }
+        
+        img.avatar{
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+      }
+      
+    }
+
+  }
+
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box{
+  width: 100%;
+  background-color: #fff;
+  border:1px solid #ccc5;
+  border-radius: 2px;
+  padding: 1rem .7rem;
+}
+
+i{
+  color:#757575;
+}
+
+@import './Inputs';

@@ -1,0 +1,20 @@
+@import './Colors';
+
+button{
+  outline: none;
+  &.btn-secondary{
+    display: block;
+    cursor: pointer;
+    background-color: $secondary;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem .7rem;
+    color: white;
+    transition: .3s;
+    font-size: 15px;
+
+    &:hover{
+      background-color: rgba($secondary, .7);
+    }
+  }
+}

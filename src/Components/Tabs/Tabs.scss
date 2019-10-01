@@ -1,0 +1,58 @@
+@import '../../sass/Colors';
+
+.tabs{
+  width: 100%;
+  //border: 1px dashed;
+  padding: 0;
+  > .tabs-links {
+    //display: table;
+    position: relative;
+    top: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap row;
+    border: 1px solid #ccc5;
+
+    > button.tab-link,a.tab-link{
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      background-color: #fff;
+      border:none;
+      border-bottom:3px solid #ccc; 
+      line-height: 3;
+      padding: .5rem;
+      transition: all .5s;
+      font-weight: bold;
+
+      &:hover{
+        background-color: #f5f5f5;
+      }
+        &.active{
+          color: $secondary;
+          border-bottom: 3px solid $secondary;
+        }
+    }
+
+  }
+
+  .tabs-contents{
+    position: relative;
+    .tab-content{
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ccc5;
+      border-top:none;
+      border-top: transparent;
+      display: none;  
+      padding: 1rem 1.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &.active{
+        display: block;
+      }
+    }
+  }
+
+}
